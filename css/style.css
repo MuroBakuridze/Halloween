@@ -6,3 +6,7 @@
   background-image:    -moz-linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%)
  
 }
+.monster,.zombie{
+  width: 100px;
+
+}
