@@ -1,12 +1,118 @@
+.flex{
+  display: flex;
+  align-items: center;
+}
 .body{
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
-  background-image: -webkit-linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
-  background-image:    -moz-linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%)
+
+  /* Green gradient */
+  background-image: linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  background-image: -webkit-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  background-image:    -moz-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+
+  /* Red gradient */
+  /* background-image: linear-gradient(to right, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
+  background-image: -webkit-linear-gradient(to right, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
+  background-image:    -moz-linear-gradient(to right, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%); */
+
+  /* Black solid */
+  /* background-color: hsl(30, 8%, 8%); */
  
 }
-.monster,.zombie{
-  width: 100px;
+.header{
+  width: 100%;
+  background-image: linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  background-image: -webkit-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  background-image:    -moz-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  border-bottom: 1px solid salmon;
+}
+.nav_container{
+  max-width: 968px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto 10px auto;
+  display: flex;
+  flex-wrap: nowrap;
 
+}
+.nav_title,.nav_list{
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  margin-left: 10px;
+}
+.nav_item{
+  margin: 0 30px;
+}
+.gradient-text{
+  font-family: 'SpookyHunterPersonalUse';
+  /* color: rgb(216, 213, 213); */
+  font-size: 35px;
+  /* Fallback: Set a background color. */
+  background-color: rgb(255, 255, 255);
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #9ff5db, #eb0fcd);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.nav_link{
+  font-family: 'Poppins-Medium.ttf';
+  color: aliceblue;
+}
+.nav_link:hover{
+  color: rgb(139, 168, 10);
+  transition-duration: 400ms;
+}
+.logo2{
+  display: none;
+  height: 60px;
+}
+@media screen and (max-width: 770px){
+ .nav_container{
+   width: 100%;
+   height: 300px;
+   border: none;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: nowrap;
+   top: 0;
+ }
+ .nav_list{
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .nav_item{
+   padding: 10px;
+   font-size: 20px;
+ }
+ .gradient-text{
+  font-family: 'HalloweenMorning';
+  font-size: 60px;
+ }
+ .logo{
+   display: none;
+ }
+ .logo2{
+   display: block;
+ }
 }

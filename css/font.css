@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Halloween Morning';
+  src: url('../fonts/Morning.eot');
+  src: url('../fonts/Halloween Morning.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Halloween Morning.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HalloweenMorning';
+  src: url('../fonts/HalloweenMorning.svg#HalloweenMorning') format('svg'),
+       url('../fonts/HalloweenMorning.ttf') format('truetype'),
+       url('../fonts/HalloweenMorning.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url('../fonts/Poppins-Black.eot');
+  src: url('../fonts/Poppins-Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Poppins-Black.svg#Poppins-Black') format('svg'),
+       url('../fonts/Poppins-Black.ttf') format('truetype'),
+       url('../fonts/Poppins-Black.woff') format('woff'),
+       url('../fonts/Poppins-Black.woff2') format('woff2');
+
+}
+@font-face {
+  font-family: 'Poppins-Medium.ttf';
+  src: url('../fonts/Poppins-Medium.eot');
+  src: url('../fonts/Poppins-Medium.svg#Poppins-Black') format('svg'),
+       url('../fonts/Poppins-Medium.ttf') format('truetype'),
+       url('../fonts/Poppins-Medium.woff') format('woff'),
+       url('../fonts/Poppins-Medium.woff2') format('woff2');
+
+}
+
+@font-face {
+  font-family: 'SpookyHunterPersonalUse';
+  src: url('../fonts/SpookyHunterPersonalUse.eot');
+  src: url('../fonts/SpookyHunterPersonalUse.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SpookyHunterPersonalUse.svg#SpookyHunterPersonalUse') format('svg'),
+       url('../fonts/SpookyHunterPersonalUse.ttf') format('truetype'),
+       url('../fonts/SpookyHunterPersonalUse.woff') format('woff'),
+       url('../fonts/SpookyHunterPersonalUse.woff2') format('woff2');
+}
