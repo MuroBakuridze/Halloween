@@ -9,7 +9,6 @@
 //   })
 // }
 
-
 // // HIDE MENU
 // if(navClose){
 //   navClose.addEventListener('click', () => {
@@ -17,20 +16,22 @@
 //   })
 // }
 
-let navMenu = document.getElementById('nav-container')
-let navToggle = document.getElementById('nav-toggle')
-let navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById("nav-container");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
+const header = document.querySelector(".header");
 
-let navFunc = function () {
-  navMenu.classList.add('show-menu');
-  navToggle.classList.add('remove-menu');
-}
-let xFunc = function () {
-  navMenu.classList.remove('show-menu');
-  navToggle.classList.remove('remove-menu');
-  navClose.classList.add('remove-x')
-  navToggle.classList.add('show-bar')
+if (navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add('show-menu')
+        navToggle.classList.add('remove-menu')
+    })
 }
 
-navToggle.addEventListener('click', navFunc);
-navClose.addEventListener('click', xFunc);
+if (navClose) {
+    navMenu.addEventListener("click", () => {
+        navMenu.classList.remove('show-menu')
+        navToggle.classList.remove('remove-menu')
+    })
+}
+

@@ -1,15 +1,27 @@
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
-.body{
+.body {
   height: 100vh;
   width: 100%;
 
   /* Green gradient */
-  background-image: linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
-  background-image: -webkit-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
-  background-image:    -moz-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  background-image: linear-gradient(
+    to left,
+    hsl(58, 28%, 40%) 0%,
+    hsl(104, 28%, 40%) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to left,
+    hsl(58, 28%, 40%) 0%,
+    hsl(104, 28%, 40%) 100%
+  );
+  background-image: -moz-linear-gradient(
+    to left,
+    hsl(58, 28%, 40%) 0%,
+    hsl(104, 28%, 40%) 100%
+  );
 
   /* Red gradient */
   /* background-image: linear-gradient(to right, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
@@ -18,46 +30,56 @@
 
   /* Black solid */
   /* background-color: hsl(30, 8%, 8%); */
- 
 }
-.header{
+.header {
   width: 100%;
-  background-image: linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
-  background-image: -webkit-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
-  background-image:    -moz-linear-gradient(to left, hsl(58, 28%, 40%) 0%, hsl(104, 28%, 40%) 100%);
+  background-image: linear-gradient(
+    to left,
+    hsl(58, 28%, 40%) 0%,
+    hsl(104, 28%, 40%) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to left,
+    hsl(58, 28%, 40%) 0%,
+    hsl(104, 28%, 40%) 100%
+  );
+  background-image: -moz-linear-gradient(
+    to left,
+    hsl(58, 28%, 40%) 0%,
+    hsl(104, 28%, 40%) 100%
+  );
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 10;
-  border-bottom: 1px solid salmon;
 }
-.nav_container{
+.nav_container {
   max-width: 968px;
   justify-content: space-between;
   align-items: center;
   margin: 50px auto 10px auto;
   display: flex;
   flex-wrap: nowrap;
-
 }
-.nav_title,.nav_list{
+.nav_title,
+.nav_list {
   justify-content: space-between;
   column-gap: 0.5rem;
   margin-left: 10px;
 }
-.nav_item{
+.nav_item {
   margin: 0 30px;
 }
-.gradient-text{
-  font-family: 'SpookyHunterPersonalUse';
+.gradient-text {
+  font-family: "SpookyHunterPersonalUse";
   /* color: rgb(216, 213, 213); */
   font-size: 35px;
   /* Fallback: Set a background color. */
   background-color: rgb(255, 255, 255);
-  
+
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #9ff5db, #eb0fcd);
-  
+  /* background-image: linear-gradient(45deg, #9ff5db, #eb0fcd); */
+  background-image: linear-gradient(65deg, #e98a1d, #d1c2cf);
   /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
@@ -65,83 +87,87 @@
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
 
-.nav_link{
-  font-family: 'Poppins-Medium.ttf';
+.nav_link {
+  font-family: "Poppins-Medium.ttf";
   color: aliceblue;
 }
-.nav_link:hover{
-  color: rgb(139, 168, 10);
+.nav_link:hover {
+  color: #e9993d;
   transition-duration: 400ms;
 }
-.logo2{
+.logo2 {
   display: none;
-  height: 60px;
+  width: 200px;
+
 }
 .nav_close,
-.nav_toggle{
+.nav_toggle {
   font-size: 1.25rem;
-  cursor: pointer
+  cursor: pointer;
 }
-.nav_close{
-  position: absolute;
-  top: -50px;
-  right: 10px;
-}
-.nav_toggle{
+.nav_close {
   position: absolute;
   top: 10px;
   right: 10px;
+  display: none;
+}
+.nav_toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
 }
 
-@media screen and (max-width: 770px){
- .nav_container{
-   width: 100%;
-   height: 300px;
-   border-bottom: 1px solid sandybrown;
-   position: fixed;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: nowrap;
-   top: -150%;
-   left: 0;
- }
- .show-menu{
-  top: 0px;
-}
-.remove-menu{
-  top:-50px;
-}
-.remove-x{
-  top: -50px;
-}
-.show-bar{
-  top:0;
-}
- .nav_list{
-  padding-top: 20px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- }
- .nav_item{
-   padding: 10px;
-   font-size: 20px;
- }
- .gradient-text{
-  font-family: 'HalloweenMorning';
-  font-size: 60px;
- }
- .logo{
-   display: none;
- }
- .logo2{
-   display: block;
- }
+@media screen and (max-width: 770px) {
+  .nav_container {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    top: -450px;
+    opacity: 0.8;
+  }
+  .nav_toggle,.nav_close {
+    display: block;
+  }
+  .show-menu {
+    top: 0px;
+    transition-duration: 600ms;
+  }
+  .remove-menu,.remove-x {
+    top: -450px;
+    transition-duration: 600ms;
+  }
+  .nav_list {
+    margin-top: -70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_item {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .gradient-text {
+    font-family: "HalloweenMorning";
+    font-size: 60px;
+  }
+  .logo {
+    display: none;
+  }
+  .logo2 {
+    display: block;
+    margin-top: 80px;
+  }
 }
