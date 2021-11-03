@@ -16,22 +16,24 @@
 //   })
 // }
 
-const navMenu = document.getElementById("nav-container");
-const navToggle = document.getElementById("nav-toggle");
-const navClose = document.getElementById("nav-close");
-const header = document.querySelector(".header");
+const   navMenu = document.getElementById("nav-container"),
+        navToggle = document.getElementById("nav-toggle"),
+        xClose = document.getElementById("x-close");
 
 if (navToggle) {
     navToggle.addEventListener("click", () => {
         navMenu.classList.add('show-menu')
         navToggle.classList.add('remove-menu')
+        xClose.classList.remove('removeX')
     })
 }
 
-if (navClose) {
-    navMenu.addEventListener("click", () => {
+if (xClose) {
+    xClose.addEventListener("click", () => {
         navMenu.classList.remove('show-menu')
         navToggle.classList.remove('remove-menu')
+        xClose.classList.add('removeX')
     })
 }
+
 

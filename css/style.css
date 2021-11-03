@@ -10,7 +10,7 @@
   background-image: linear-gradient(
     to left,
     hsl(58, 28%, 40%) 0%,
-    hsl(104, 28%, 40%) 100%
+    hsl(103, 28%, 40%) 100%
   );
   background-image: -webkit-linear-gradient(
     to left,
@@ -109,26 +109,17 @@
 .nav_toggle {
   font-size: 1.25rem;
   cursor: pointer;
-}
-.nav_close {
   position: absolute;
   top: 10px;
   right: 10px;
   display: none;
 }
-.nav_toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: none;
-}
-
 @media screen and (max-width: 770px) {
   .nav_container {
     width: 100%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-bottom: 10px;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -137,6 +128,12 @@
     flex-wrap: nowrap;
     top: -450px;
     opacity: 0.8;
+    transition-duration: 600ms;
+    background-image: linear-gradient(
+      to top,
+      hsl(58, 28%, 40%) 0%,
+      hsl(103, 28%, 40%) 100%
+    );
   }
   .nav_toggle,.nav_close {
     display: block;
@@ -145,9 +142,12 @@
     top: 0px;
     transition-duration: 600ms;
   }
-  .remove-menu,.remove-x {
+  .remove-menu{
     top: -450px;
     transition-duration: 600ms;
+  }
+  .removeX{
+    display: none;
   }
   .nav_list {
     margin-top: -70px;
