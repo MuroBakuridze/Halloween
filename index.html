@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- ICON -->
+
+  <!--======================ICON======================= -->
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <!-- --- -->
+  <!-- ================================================ -->
+
+  <!-- =====================SWIPER =====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- ================================================ -->
   <title>Halloween</title>
 </head>
 <body class="body">
-  
+  <!--==================== HEADER ====================-->
   <header class="header">
     <nav class="nav_container" id="nav-container">
       <a href="#" class="nav_title flex">
@@ -43,16 +48,44 @@
               <a href="#new" class="nav_link">Support</a>
           </li>
         </ul>
+        
         <div class="nav_close" id="nav-close">
           <box-icon id="x-close" type="regular" name="x" color="#fff" size="md" ></box-icon>
         </div>
     </nav>
-
     <div class="nav_toggle" id="nav-toggle">
       <box-icon type="regular" name="window-open" color="#fff" size="md" ></box-icon>
   </div>
   </header>
+  <!--==================== MAIN SECTION ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home container" id="home">
+      <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+          <div class="home__contant grid">
+            <img src="./images/characters/book.png" alt="zombie" class="home__image">
+            <div class="home__text__div">
+              <h2 class="home__topic">
+                Zombies
+              </h2>
+              <p class="home__text">
+                The zombie, often portrayed as an undead, flesh-eating, decaying corpse, has enjoyed a popularity surge in recent years. Whether they’re devouring their prey in The Walking Dead or getting their groove on in Michael Jackson’s “Thriller” video, zombies dominate pop culture. But are zombies real? Unlike many other monsters—which are mostly a product of superstition, religion and fear— zombies have a basis in fact, and several verified cases of zombies have been reported from Haitian voodoo culture
+              </p>
+              <h2 class="home__topic2">
+                Ancient Origins of Zombies
+              </h2>
+              <p class="home__text2">
+                The Ancient Greeks may have been the first civilization terrorized by a fear of the undead. Archaeologists have unearthed many ancient graves which contained skeletons pinned down by rocks and other heavy objects, assumedly to prevent the dead bodies from reanimating.
 
+                Zombie folklore has been around for centuries in Haiti, possibly originating in the 17th century when West African slaves were brought in to work on Haiti’s sugar cane plantations. Brutal conditions left the slaves longing for freedom. According to some reports, the life—or rather afterlife—of a zombie represented the horrific plight of slavery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="halloween.js"></script>
   <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </body>

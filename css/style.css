@@ -114,6 +114,69 @@
   right: 10px;
   display: none;
 }
+
+/* HOME SECTIONS */
+.container{
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin: 100px auto;
+}
+.grid{
+  display: grid;
+}
+.home__contant{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.home__image{
+  height: 300px;
+  margin: 30px;
+}
+.home__text__div{
+  width: 600px;
+}
+.home__topic,.home__topic2{
+  font-family: 'SpookyHunterPersonalUse';
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(65deg, #dc64ec, #f1f1f1);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.home__text,.home__text2{
+  font-family: 'Poppins-Medium.ttf';
+  font-size: 14px;
+  color: #fff;
+}
+/* Swiper Class */
+.swiper-pagination {
+  position: initial;
+  margin-top: var(--mb-1);
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 0.5rem;
+}
 @media screen and (max-width: 770px) {
   .nav_container {
     width: 100%;
