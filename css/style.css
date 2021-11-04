@@ -36,7 +36,7 @@
   background-image: linear-gradient(
     to left,
     hsl(58, 28%, 40%) 0%,
-    hsl(104, 28%, 40%) 100%
+    hsl(103, 28%, 40%) 100%
   );
   background-image: -webkit-linear-gradient(
     to left,
@@ -105,8 +105,8 @@
   width: 200px;
 
 }
-.nav_close,
-.nav_toggle {
+.nav_close
+{
   font-size: 1.25rem;
   cursor: pointer;
   position: absolute;
@@ -114,13 +114,37 @@
   right: 10px;
   display: none;
 }
+.nav_toggle{
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_title2{
+  margin: 10px;
+}
+.title2{
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.logo3{
+  padding-top: 6px;
+  width: 40px;
+  display: none;
+}
+.box_icon{
+  margin: 10px 30px;
+  display: none;
+}
 
-/* HOME SECTIONS */
+/* ================== HOME SECTIONS ============= */
 .container{
   max-width: 968px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 .grid{
   display: grid;
@@ -128,20 +152,23 @@
 .home__contant{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
 }
 .home__image{
   height: 300px;
-  margin: 30px;
+  margin: 0 30px 0 0;
+  filter: drop-shadow(10px 4px 4px #6e316985);
 }
 .home__text__div{
   width: 600px;
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .home__topic,.home__topic2{
   font-family: 'SpookyHunterPersonalUse';
-  font-size: 30px;
+  font-size: 60px;
   color: #fff;
   background-image: linear-gradient(65deg, #dc64ec, #f1f1f1);
         background-size: 100%;
@@ -154,7 +181,40 @@
   font-size: 14px;
   color: #fff;
 }
-/* Swiper Class */
+.text_buttons{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.button{
+  padding: 20px;
+  background-color: #d85a06;
+  color: #fff;
+  font-family: 'Poppins-Medium.ttf';
+  border-radius: 10px;
+}
+.button--link{
+  padding: 20px;
+  color: #fff;
+  font-family: 'Poppins-Medium.ttf';
+}
+.left_contant{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left_div{
+  border-left: 2px solid #fff;
+}
+.desc,.desc2{
+  color: #fff;
+  font-family: 'Poppins-Medium.ttf';
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* ================= Swiper Class =================== */
 .swiper-pagination {
   position: initial;
   margin-top: var(--mb-1);
@@ -177,6 +237,24 @@
   height: 5px;
   border-radius: 0.5rem;
 }
+
+/* ================ MOBILE VERSION =================== */
+@media screen and (max-width: 890px) {
+  .home__contant{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left_contant{
+    flex-direction: row;
+  }
+  .home__text__div{
+    padding: 30px;
+    width: auto;
+  }
+}
 @media screen and (max-width: 770px) {
   .nav_container {
     width: 100%;
@@ -190,7 +268,7 @@
     justify-content: center;
     flex-wrap: nowrap;
     top: -450px;
-    opacity: 0.8;
+    opacity: 1;
     transition-duration: 600ms;
     background-image: linear-gradient(
       to top,
@@ -198,8 +276,11 @@
       hsl(103, 28%, 40%) 100%
     );
   }
-  .nav_toggle,.nav_close {
+  .nav_close,.nav_title2,.logo3,.box_icon {
     display: block;
+  }
+  .title2{
+    display: flex;
   }
   .show-menu {
     top: 0px;
