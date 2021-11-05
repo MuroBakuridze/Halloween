@@ -144,7 +144,8 @@
   max-width: 968px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin: 150px auto;
+  margin: 0 auto ;
+  padding-top: 150px;
 }
 .grid{
   display: grid;
@@ -161,7 +162,6 @@
 }
 .home__text__div{
   width: 600px;
-  height: 438px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,10 +180,10 @@
   font-family: 'Poppins-Medium.ttf';
   font-size: 14px;
   color: #fff;
+  /* max-height: 200px; */
 }
 .text_buttons{
   width: 100%;
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -202,10 +202,10 @@
 .left_contant{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
 }
 .left_div{
-  border-left: 2px solid #fff;
+  border-left: 2px solid rgb(255, 255, 255);
 }
 .desc,.desc2{
   color: #fff;
@@ -217,13 +217,13 @@
 /* ================= Swiper Class =================== */
 .swiper-pagination {
   position: initial;
-  margin-top: var(--mb-1);
+
 }
 
 .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
-  background-color: var(--title-color);
+  background-color: red;
   opacity: 1;
 }
 
