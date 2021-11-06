@@ -31,6 +31,8 @@
   /* Black solid */
   /* background-color: hsl(30, 8%, 8%); */
 }
+
+/* ================== HEADER SECTIONS ============= */
 .header {
   width: 100%;
   background-image: linear-gradient(
@@ -147,10 +149,15 @@
   margin-right: 1.5rem;
   margin: 0 auto ;
   padding-top: 150px;
+  
 }
 .swiper{
   /* height: 600px; */
   display: flex;
+  
+}
+.swiper-wrapper{
+  margin-bottom: 150px;
 }
 .grid{
   display: grid;
@@ -183,13 +190,12 @@
 }
 .home__text,.home__text2{
   font-family: 'Poppins-Medium.ttf';
-  font-size: 14px;
-  color: #fff;
-  /* max-height: 200px; */
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  height: 300px;
 }
 .text_buttons{
   width: 100%;
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,31 +226,73 @@
   padding: 10px;
   cursor: pointer;
 }
-
+/* ================== SCARY SECTIONS ============= */
+.scary{
+  margin-top: 100px;
+}
+.scary_title{
+  font-family: 'Halloween Morning';
+  color: rgba(172, 23, 23, 0.986);
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scary_container{
+  max-width: 968px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.scary_category{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.scary_img{
+  height: 250px;
+  margin-bottom: 20px;
+}
+.scary_img:hover{
+  margin-bottom: 5px;
+  transition-duration: 0.3s;
+}
+.category_name{
+  font-family: 'Halloween Morning';
+  font-size: 25px;
+  color: rgba(172, 23, 23, 0.986);
+}
+.category_desc,.category_desc2{
+  font-family: 'Poppins-Medium.ttf';
+  font-size: 15px;
+  color: rgba(218, 214, 214, 0.986);
+}
 /* ================= Swiper Class =================== */
 .pag{
   margin-top: 50px;
 }
 .swiper-pagination {
-  position: initial;
+  position: initial ;
 }
 
 .swiper-pagination-bullet {
-  width: 5px;
-  height: 5px;
-  background-color: yellow;
-  opacity: 1;
+  width: 5px !important;
+  height: 5px !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  margin: 0 0.5rem;
+  margin: 0 0.5rem !important;
 }
 
 .swiper-pagination-bullet-active {
-  width: 1.5rem;
-  height: 5px;
-  border-radius: 0.5rem;
+  width: 1.5rem !important;
+  height: 5px !important;
+  border-radius: 0.5rem !important;
 }
 
 /* ================ MOBILE VERSION =================== */
@@ -256,8 +304,9 @@
     flex-direction: column;
     align-items: center;
   }
-  .home__text2,.home__topic2{
-    display: none;
+  .home__text{
+    height: 150px;
+    font-size: 14px;
   }
   .left_contant{
     flex-direction: row;
@@ -266,7 +315,9 @@
     padding: 30px;
     width: auto;
   }
-
+  .swiper-wrapper{
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 770px) {
   .nav_container {
@@ -326,5 +377,24 @@
   .logo2 {
     display: block;
     margin-top: 80px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .home__image{
+    height: 230px;
+  }
+  .home__text{
+    font-size: 11px;
+  }
+  .home__topic{
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .button{
+    padding: 20px;
+    font-size: 12px;
+  }
+  .button--link{
+    font-size: 12px;
   }
 }
