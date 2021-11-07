@@ -229,6 +229,10 @@
 /* ================== SCARY SECTIONS ============= */
 .scary{
   margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .scary_title{
   font-family: 'Halloween Morning';
@@ -239,24 +243,28 @@
   justify-content: center;
 }
 .scary_container{
+  width: 100%;
   max-width: 968px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 50px auto;
+  margin-top: 50px;
 }
 .scary_category{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
+  padding: 5px;
+
 }
 .scary_img{
   height: 250px;
   margin-bottom: 20px;
 }
 .scary_img:hover{
-  margin-bottom: 5px;
+  transform: translateY(-10px);
   transition-duration: 0.3s;
 }
 .category_name{
@@ -268,6 +276,51 @@
   font-family: 'Poppins-Medium.ttf';
   font-size: 15px;
   color: rgba(218, 214, 214, 0.986);
+}
+
+/* ================= About Section =================== */
+.about{
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin: 0 auto ;
+  padding-top: 150px;
+}
+.about_container{
+  display: flex;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+.about_txt{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.about_title{
+  font-family: 'SpookyHunterPersonalUse';
+  font-size: 65px;
+  background-image: linear-gradient(
+65deg, #e98a1d, #d1c2cf);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about_description,.about_description2{
+  margin-top: 20px;
+  font-family: 'Poppins-Medium.ttf';
+  color: #d1c2cf;
+}
+.about_btn{
+      padding: 20px;
+      background-color: #d85a06;
+      color: #fff;
+      font-family: 'Poppins-Medium.ttf';
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      margin-top: 30px;
 }
 /* ================= Swiper Class =================== */
 .pag{
@@ -318,6 +371,16 @@
   .swiper-wrapper{
     margin-bottom: 50px;
   }
+  .about_description2{
+    display: none;
+  }
+  .traveler{
+    height: 450px;
+  }
+  .about_title{
+    font-size: 45px;
+  }
+
 }
 @media screen and (max-width: 770px) {
   .nav_container {
@@ -377,6 +440,13 @@
   .logo2 {
     display: block;
     margin-top: 80px;
+  }
+  .scary_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .scary_category{
+    margin: 30px auto;
   }
 }
 @media screen and (max-width: 570px) {
